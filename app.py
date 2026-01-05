@@ -1,5 +1,2 @@
-print(hello from API)
-
-def get_books():
-	return ["Book A, "Book B"]
-
+def search_books(keyword):
+	return [b for b in get_books() if keyword.lower() in b.lower()]
